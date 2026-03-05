@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
@@ -24,5 +25,8 @@ int main()
 	Swap2Ints(AP, BP);
 
 	cout << "A=" << *AP << "      " << "B=" << *BP << endl;
+
+	assert(*AP == 20);
+	assert(*BP == 10);
 
 }
